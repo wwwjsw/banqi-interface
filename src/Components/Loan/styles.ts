@@ -19,5 +19,5 @@ export const LoanCard = styled.View`
 `;
 
 export const LoanInfo = styled.View`
-    margin-left: ${sizes.space.medium}
+    margin-left: ${sizes.space.medium}px;
 `;

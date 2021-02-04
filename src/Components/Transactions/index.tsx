@@ -20,6 +20,7 @@ export default function Transactions({ navigation }) {
             />
             {filteredTransactions.map((item, i, filtered) => 
                 <Transaction
+                    key={i}
                     navigation={navigation}
                     isFirst={filtered[0]._id === item._id}
                     isLast={filtered.reverse()[0]._id === item._id}
