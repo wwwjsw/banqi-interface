@@ -12,8 +12,7 @@ export default function Balance() {
             <ActionsScrollView
                 showsHorizontalScrollIndicator={false}
                 contentContainerStyle={{
-                    paddingHorizontal: 20,
-                    background: "red",
+                    marginHorizontal: 20,
                 }}
                 horizontal
                 contentOffset={{x: 20, y: 0}}
