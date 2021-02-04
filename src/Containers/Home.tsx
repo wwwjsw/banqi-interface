@@ -9,7 +9,7 @@ import Transactions from '../Components/Transactions'
 import SeeMore from '../Components/SeeMore'
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-export default function Home() {
+export default function Home({ navigation }) {
   const FlatListHeader = () => {
     return (
       <SafeAreaView>
@@ -17,8 +17,8 @@ export default function Home() {
         <Balance />
         <Actions />
         <Loan />
-        <Transactions />
-        <SeeMore />
+        <Transactions navigation={navigation} />
+        <SeeMore navigation={navigation} />
       </SafeAreaView>
     )
   }

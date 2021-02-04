@@ -10,7 +10,7 @@ export const IntroContainer = styled.View`
 
 export const IntroContainerGoTo = styled.TouchableOpacity`
     border-radius: 8px;
-    border-width: 3;
+    border-width: 3px;
     padding: ${sizes.space.small}px;
     border-style: solid;
     border-color: ${colors.primary};

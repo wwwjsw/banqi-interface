@@ -7,9 +7,11 @@ import Typography from '../Typography';
 import { colors } from '../../Constants';
 
 
-export default function SeeMore() {
+export default function SeeMore({ navigation }) {
     return (
-        <SeeMoreContainer>
+        <SeeMoreContainer
+            onPress={() => navigation.navigate('List')}
+        >
             <Typography
                 color={colors.blue}
                 fontSize={14}

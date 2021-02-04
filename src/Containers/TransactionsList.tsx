@@ -1,24 +1,23 @@
 import React from 'react'
 
-import { transactions } from '../../Mock/data.json'
-import { colors } from '../../Constants';
+import { transactions } from '../Mock/data.json'
+import { colors } from '../Constants';
 
-import Typography from '../Typography'
-import Transaction from '../Transaction'
+import Typography from '../Components/Typography'
+import Transaction from '../Components/Transaction'
 
-import { TransactionsContainer } from './styles'
+import { TransactionsListContainer } from './TransactionsList.styles'
 
-export default function Transactions({ navigation }) {
-    const filteredTransactions = transactions.reverse().slice(0, 3)
+export default function TransactionsList({navigation}) {
 
     return (
-        <TransactionsContainer>
+        <TransactionsListContainer>
             <Typography
                 text="Histórico de transações"
                 fontSize={14}
                 color={colors.textBlack}
             />
-            {filteredTransactions.map((item, i, filtered) => 
+            {transactions.map((item, i, filtered) => 
                 <Transaction
                     navigation={navigation}
                     isFirst={filtered[0]._id === item._id}
@@ -26,6 +25,6 @@ export default function Transactions({ navigation }) {
                     transactionInfo={item}
                 />
             )}
-        </TransactionsContainer>
+        </TransactionsListContainer>
   );
 }

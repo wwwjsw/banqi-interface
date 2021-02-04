@@ -24,13 +24,14 @@ interface ITransaction {
     isFirst: boolean;
     isLast: boolean;
     transactionInfo: TypeTransaction;
+    navigation: any;
 }
 
 export default function Transaction(props: ITransaction) {
-    const { isFirst, isLast, transactionInfo } = props;
+    const { isFirst, isLast, transactionInfo, navigation } = props;
 
     return (
-        <TransactionItem paddingTop={isFirst}>
+        <TransactionItem paddingTop={isFirst} onPress={() => navigation.navigate('TransactionDetail', transactionInfo)}>
             <TransactionContainerIcon>
                 <IconLineTop transparent={isFirst} />
                 <ArrowDown />

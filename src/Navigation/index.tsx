@@ -6,6 +6,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from '../Containers/Home'
 import Intro from '../Containers/Intro'
+import TransactionsList from '../Containers/TransactionsList'
+import TransactionDetail from '../Containers/TransactionDetail'
 
 const Stack = createStackNavigator();
 
@@ -22,6 +24,20 @@ function App() {
       <Stack.Screen
         name="Home"
         component={Home}
+        options={{
+          headerShown: false
+        }}
+      />
+      <Stack.Screen
+        name="List"
+        component={TransactionsList}
+        options={{
+          headerShown: false
+        }}
+      />
+      <Stack.Screen
+        name="TransactionDetail"
+        component={TransactionDetail}
         options={{
           headerShown: false
         }}
