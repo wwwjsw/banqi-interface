@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, FlatList } from 'react-native';
+import { FlatList } from 'react-native';
 
 import Header from '../Components/Header'
 import Balance from '../Components/Balance'
