@@ -6,5 +6,6 @@ export const colors  = {
     blue: "#00B0F0",
     green: "#14C46F",
     textBlack: "#333333",
-    textGray: "#767676"
+    textBlackOpacity: "rgba(0, 0, 0, 0.5)",
+    textGray: "#767676",
 }
