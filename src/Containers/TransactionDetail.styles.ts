@@ -1,10 +1,11 @@
 import styled from 'styled-components/native'
-import { sizes } from '../Constants';
+import { colors, sizes } from '../Constants';
 
 export const GoBack = styled.TouchableOpacity`
     padding-horizontal: ${sizes.space.large}px;
     padding-top: ${sizes.space.small}px;
     padding-bottom: ${sizes.space.small}px;
+    background-color: ${colors.primary}
 
 `;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Platform, View } from 'react-native';
 import Typography from '../Components/Typography';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { colors } from '../Constants';
@@ -13,7 +13,7 @@ const TransactionDetail: React.FC = ({ route, navigation }) => {
     return (
     <SafeAreaView>
         <GoBack onPress={() => navigation.goBack()}>
-            <Typography color={colors.textBlack} bold fontSize={36} text="Voltar" />
+            <Typography color={colors.white} bold fontSize={36} text="Voltar" />
         </GoBack>
         <TransactionDetailContainer>
             <View>
@@ -25,17 +25,20 @@ const TransactionDetail: React.FC = ({ route, navigation }) => {
                 <Typography color={colors.green} fontSize={16} text={transactionInfo.amount} />
             </View>
         </TransactionDetailContainer>
-        <LottieView
-            autoPlay
-            loop={false}
-            speed={0.5}
-            style={{
-                width: 600,
-                height: 400,
-                alignSelf: 'center'
-            }}
-            source={require('../../assets/Animation/creditCard.json')}
-        />
+
+        {Platform.OS === 'ios' && 
+            <LottieView
+                autoPlay
+                loop={false}
+                speed={0.5}
+                style={{
+                    width: 600,
+                    height: 400,
+                    alignSelf: 'center'
+                }}
+                source={require('../../assets/Animation/creditCard.json')}
+            />
+        }
     </SafeAreaView>
     );
 }
