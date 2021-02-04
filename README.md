@@ -1,7 +1,7 @@
 # banQi challange
 
 ## Stack
-- react-native-navigation
+- react-navigation
 - styled-components
 - expo-cli
 - lottie
