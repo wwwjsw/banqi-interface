@@ -1,11 +1,17 @@
-# Sample Snack app
+# banQi challange
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by clicking the **Run** button or use the simulator by clicking **Tap to Play**. When you're done, click **Save** and share the link!
+## Stack
+- react-native-navigation
+- styled-components
+- expo-cli
+- lottie
+## Setup
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Export** your project and use it with [expo-cli](https://docs.expo.io/versions/latest/introduction/installation.html).
+1. Run `yarn` to install packages.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the **Embed** button.
+2. Then run `yarn start` to initialize project bundle
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.io).
+## App Running
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack-web).
+![gif who demonstrates app](demo.gif "App live running")
+
