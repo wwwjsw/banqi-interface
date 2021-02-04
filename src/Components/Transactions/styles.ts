@@ -4,6 +4,6 @@ import { colors, sizes } from '../../Constants'
 
 export const TransactionsContainer = styled.View`
     background-color: ${colors.white};
-    padding-horizontal: ${sizes.space.large};
-    padding-top: ${sizes.space.extraLarge};
+    padding-horizontal: ${sizes.space.large}px;
+    padding-top: ${sizes.space.extraLarge}px;
 `;

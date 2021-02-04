@@ -1,13 +1,20 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, FlatList, StatusBar, Platform, SafeAreaView } from 'react-native';
+import { StatusBar, Platform } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+
 import { colors } from './src/Constants';
-import Home from './src/Containers/Home'
+
+import Navigation from './src/Navigation'
+
+import 'react-native-gesture-handler';
 
 export default function App() {
   return (
-    <SafeAreaView>
+    <>
       <StatusBar backgroundColor={colors.primary} barStyle={Platform.OS === "ios" ? "dark-content" : "light-content"} />
-      <Home />
-    </SafeAreaView>
+      <NavigationContainer>
+        <Navigation />
+      </NavigationContainer>
+    </>
   );
 }
