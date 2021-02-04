@@ -3,7 +3,6 @@ import { sizes, colors } from '../../Constants';
 
 export const LoanContainer = styled.View`
     align-items: center;
-    padding-top: ${sizes.space.small};
     padding-bottom: ${sizes.space.large};
     padding-horizontal: ${sizes.space.large};
     background-color: ${colors.background};
