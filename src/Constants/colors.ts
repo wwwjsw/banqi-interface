@@ -8,4 +8,5 @@ export const colors  = {
     textBlack: "#333333",
     textBlackOpacity: "rgba(0, 0, 0, 0.5)",
     textGray: "#767676",
+    blackLowOpacity: "rgba(150, 150, 150, 0.2)",
 }
