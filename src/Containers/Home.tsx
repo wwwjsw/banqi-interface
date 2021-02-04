@@ -6,6 +6,7 @@ import Balance from '../Components/Balance'
 import Actions from '../Components/Actions'
 import Loan from '../Components/Loan'
 import Transactions from '../Components/Transactions'
+import SeeMore from '../Components/SeeMore'
 
 export default function Home() {
   const FlatListHeader = () => {
@@ -16,6 +17,7 @@ export default function Home() {
         <Actions />
         <Loan />
         <Transactions />
+        <SeeMore />
       </>
     )
   }
